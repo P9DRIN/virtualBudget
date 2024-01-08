@@ -1,0 +1,89 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectName": "Sistema",
+      "inicialInvestiment": 200000,
+      "budgets": [
+        {
+          "id": 1,
+          "budgetName": "Desenvolvimento de sistema",
+          "price": 20000,
+          "category": "T.I",
+          "createdAt": "2023-12-14T09:03:47.549Z"
+        },
+        {
+          "id": 2,
+          "budgetName": "Manutenção de sistema legado",
+          "price": 10000,
+          "category": "T.I",
+          "createdAt": "2023-12-15T19:35:03.109Z"
+        },
+        {
+          "id": 3,
+          "budgetName": "Desenvolvimento de sistema web",
+          "price": 5000,
+          "category": "T.I",
+          "createdAt": "2023-12-15T21:01:02.873Z"
+        },
+        {
+          "id": 4,
+          "budgetName": "Manutenção de sistema legado",
+          "price": 15000,
+          "category": "T.I",
+          "createdAt": "2023-12-16T14:56:17.224Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "projectName": "Infra",
+      "inicialInvestiment": 150000,
+      "budgets": [
+        {
+          "id": 1,
+          "budgetName": "Desenvolvimento de boas praticas",
+          "price": 20000,
+          "category": "T.I",
+          "createdAt": "2023-12-10T09:03:47.549Z"
+        },
+        {
+          "id": 2,
+          "budgetName": "Compra de material",
+          "price": 10000,
+          "category": "T.I",
+          "createdAt": "2023-12-11T19:35:03.109Z"
+        },
+        {
+          "id": 3,
+          "budgetName": "Pintura de predio",
+          "price": 5000,
+          "category": "T.I",
+          "createdAt": "2023-12-13T21:01:02.873Z"
+        },
+        {
+          "id": 4,
+          "budgetName": "Sinalização de predio",
+          "price": 15000,
+          "category": "T.I",
+          "createdAt": "2023-12-16T14:56:17.224Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "projectName": "Casa",
+      "inicialInvestiment": 30000,
+      "budgets": [
+        {
+        "id": 3,
+        "budgetName": "cimento",
+        "price": 300,
+        "category": "Construção",
+        "createdAt": "2023-12-18T08:48:49.937Z"
+      }
+      ]
+
+    }
+  ]
+}
