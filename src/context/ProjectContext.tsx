@@ -48,15 +48,15 @@ export function ProjectProvider({ children }: ProjectsProviderProps){
 
 
    async function fetchProjects(query?: string){
-    if (query){
+   if (query){
         const response = await api.get(`project/${query}`)
         setProjects(response.data.project)
     }
-    else{
+    else if(!query){
         const response = await api.get('project')
         setProjects(response.data.projects)
     }
-   }
+    }
 
 async function createProject(data: CreateProjectInput){
 
