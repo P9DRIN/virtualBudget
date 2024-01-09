@@ -18,7 +18,10 @@ export function useSum(){
             }, 0);
             
             acc.initialValue += project.inicialInvestiment
-            acc.outcome += somaPrices
+
+            const resolvePrice = somaPrices / 2
+
+            acc.outcome += resolvePrice
             acc.total = acc.income - acc.outcome 
         
             return acc
