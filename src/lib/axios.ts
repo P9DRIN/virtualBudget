@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: 'http://localhost:3333',
+    baseURL: 'https://backend-virtual-budget.vercel.app/',
 })
 
-// https://backend-virtual-budget.vercel.app/
+// http://localhost:3333
