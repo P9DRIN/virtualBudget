@@ -72,6 +72,7 @@ async function createBudget(data: CreateBudgetInput){
     const { projectName, budgetName, price, category } = data
 
     await api.post(`project/${projectName}/budgets`, { 
+        projectName,
         budgetName,
         price,
         category,
