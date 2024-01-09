@@ -49,7 +49,7 @@ export function ProjectProvider({ children }: ProjectsProviderProps){
 
    async function fetchProjects(query?: string){
     const response = await api.get(`project/${query}` 
-    })
+    )
     setProjects(response.data.projects)
    }
 
