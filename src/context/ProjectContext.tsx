@@ -85,7 +85,7 @@ async function createBudget(data: CreateBudgetInput){
 
    useEffect(() => {
     fetchProjects()
-}, [])
+}, [projects])
 
     return(
         <ProjectContext.Provider value={{ projects, fetchProjects, createProject, createBudget }}>
