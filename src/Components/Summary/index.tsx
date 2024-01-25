@@ -1,5 +1,5 @@
 import { ArrowFatLinesDown, ArrowFatLinesUp, Wallet } from "phosphor-react";
-import { Container, Card } from "./style";
+import { Container, Card, CardContainer } from "./style";
 import { useSum } from "../../hooks/useSum";
 
 export function Summary(){
@@ -9,9 +9,11 @@ export function Summary(){
     return(
         <>
             <Container>
+                <CardContainer>
+
                     <Card $variant='green'>
                         <p> Entradas <ArrowFatLinesUp size={30}/> </p>
-                                <span>{sum.initialValue}</span>
+                                <span>{sum.income}</span>
                      </Card>
 
                     <Card $variant="red">
@@ -23,6 +25,7 @@ export function Summary(){
                         <p>Total <Wallet size={30} /></p>
                     <span> {sum.total} </span>
                     </Card>
+                </CardContainer>
             </Container>
         </>
     )
