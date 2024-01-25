@@ -1,16 +1,39 @@
 import styled from 'styled-components'
 
-
-
 export const Container = styled.div`
-  width: 100%;
-  max-width: 103rem;
-  margin: 2rem auto 0;
+ 
+@media(max-width:425px){
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 426px) {
+    display: flex;
+    flex-direction: column; 
+
+  }
+
+
+
+`
+
+export const Wrapper = styled.div`
+
 `
 
 export const TableContainer = styled.div`
-  margin-top: 1.5rem;
-  
+
+@media(min-width: 426px) {
+  display: flex;
+  flex-direction: column; 
+  padding: 1rem;
+  }
+
+  @media(max-width: 425px){
+    display: flex;
+    flex-direction: column;
+  }
+
   & h1{
     color: ${props => props.theme['white-100']};
     background: ${props => props.theme['base-user']};
@@ -22,41 +45,76 @@ export const TableContainer = styled.div`
 `
 export const ProjectContainer = styled.div`
 
-width: 100%;
-margin-top: 1.5rem;
+  @media(max-width:425px){
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .2rem;
 
-display: flex;
-flex-direction: column;
+  }
+  @media(min-width: 426px) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  padding: .5rem;
+  justify-content: center;
+
+  }
 
 `
 
 export const BudgetWrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-min-width: 1000px;
-gap: 10rem;
-padding: 1.5rem 2rem;
+
+  @media(max-width:425px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    
+    padding: 1rem;
+
+
+    &:first-child{
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+ 
+}
+&:last-child{
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+  }
+  @media(min-width: 426px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &:first-child{
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+ 
+}
+&:last-child{
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+ 
+}
+  }
+
 
 border: 1px solid ${props => props.theme['base-label']};
 
 
-&:first-child{
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-}
-&:last-child{
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
+
 
 & .budgetName{
-  width: 65%;
+  
 }
 
-& div{
-  width: 25%;
-}
+
 `
 
 
