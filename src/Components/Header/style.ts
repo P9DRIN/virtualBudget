@@ -2,22 +2,32 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
 
-    height: 15vh;
+display: flex;
+align-items: center;
+justify-content: center;
 
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    
+   @media(max-width: 425px){
+    padding: 1rem;
+   }
+   @media(min-width: 426px){
+    padding: 1.5rem; 
+    }
 
 `
 
 export const TextContainer = styled.div`
+  @media(max-width: 425px){
     display: flex;
-    gap: 0.5rem;
     align-items: center;
     justify-content: center;
+    gap: .2rem;
+   }
+   @media(min-width: 426px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4rem;
+    }
 
 & svg{
         color: ${props => props.theme['yellow']};
@@ -38,7 +48,5 @@ export const TextContainer = styled.div`
     & p{
         font-size: 22px !important;
         font-weight: 700;
-        
-        
     }
 `
